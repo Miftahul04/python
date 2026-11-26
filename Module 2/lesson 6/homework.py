@@ -15,7 +15,7 @@ for i in range(start_number,end_number+1):
             digit = i % 10
             sum_of_digits + digit
             i = i // 10
-            if sum_of_digits % 3 == 0 and digit == 0 or 5:
+            if i % 3 == 0 and i % 5 == 0:
                 multiples_of_3_5+=1
             elif i % 2 == 0 and i % 5 == 0:
                 even_multiple_5 +=1
